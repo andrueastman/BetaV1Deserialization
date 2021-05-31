@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31229.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BetaV1Deserialization", "BetaV1Deserialization\BetaV1Deserialization.csproj", "{CD85833A-9887-4E74-9D27-48AF9127FBB5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Graph.Core", "msgraph-sdk-dotnet-core\src\Microsoft.Graph.Core\Microsoft.Graph.Core.csproj", "{2DCAFC75-D09F-468F-AF7C-B59BB4F9CB23}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Graph", "msgraph-sdk-dotnet\src\Microsoft.Graph\Microsoft.Graph.csproj", "{DBBFAD5A-C041-4EAB-9CD6-56782AE48B5E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2DCAFC75-D09F-468F-AF7C-B59BB4F9CB23} = {2DCAFC75-D09F-468F-AF7C-B59BB4F9CB23}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Graph.Beta", "msgraph-beta-sdk-dotnet\src\Microsoft.Graph\Microsoft.Graph.Beta.csproj", "{5C1D55E9-D95B-40A1-B42F-DD3167DF8B7F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2DCAFC75-D09F-468F-AF7C-B59BB4F9CB23} = {2DCAFC75-D09F-468F-AF7C-B59BB4F9CB23}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD85833A-9887-4E74-9D27-48AF9127FBB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD85833A-9887-4E74-9D27-48AF9127FBB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD85833A-9887-4E74-9D27-48AF9127FBB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD85833A-9887-4E74-9D27-48AF9127FBB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DCAFC75-D09F-468F-AF7C-B59BB4F9CB23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DCAFC75-D09F-468F-AF7C-B59BB4F9CB23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DCAFC75-D09F-468F-AF7C-B59BB4F9CB23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DCAFC75-D09F-468F-AF7C-B59BB4F9CB23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBBFAD5A-C041-4EAB-9CD6-56782AE48B5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBBFAD5A-C041-4EAB-9CD6-56782AE48B5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBBFAD5A-C041-4EAB-9CD6-56782AE48B5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBBFAD5A-C041-4EAB-9CD6-56782AE48B5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C1D55E9-D95B-40A1-B42F-DD3167DF8B7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C1D55E9-D95B-40A1-B42F-DD3167DF8B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C1D55E9-D95B-40A1-B42F-DD3167DF8B7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C1D55E9-D95B-40A1-B42F-DD3167DF8B7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A0C1440-C8D2-460E-B70F-C6F29E8FBBE2}
+	EndGlobalSection
+EndGlobal
